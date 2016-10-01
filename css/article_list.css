@@ -1,0 +1,9 @@
+@charset"utf-8";
+.con .article_left .article_tuiJ h3 a{color:#404040;}
+.con .article_left .article_tuiJ h3 a:hover{color:#6fb5ee;}
+.con .article_left .Index{height:45px;text-align:center;width:100%;overflow:hidden;padding-top:25px;}
+.con .article_left .Index ul{display:inline-block;}
+.con .article_left .Index ul li{float:left;margin-left:10px;border-radius:3px;border:1px solid #ABADB3;}
+.con .article_left .Index ul li a{color:#404040;display:block;padding:5px 10px;}
+.con .article_left .Index ul li a:hover{color:#c91b46;box-shadow:0 0 15px #c91b46;}
+.con .article_left .Index ul li a.Index_on{color:#c91b46;box-shadow:0 0 15px #c91b46;}
