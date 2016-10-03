@@ -10,7 +10,7 @@
 
 	</head>
 <body>
-<embed src="music/night5.mp3" palette="transparent|transparent" width=200 height=50 type=audio/mpeg loop="true" autostart="true">
+<embed src="music/night5.mp3"  width=2 height=5 type=audio/mpeg loop="true" autostart="true">
 <!--top start-->
 <div class="top">
 	<div class="top_con">
