@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>追踪时光</title>
+		<meta name="Keywords" content="关键词,关键词,关键词"/>
+		<meta name="description" content=""/>
+		<link type="text/css" rel="stylesheet" href="css/public.css"/>
+		<link type="text/css" rel="stylesheet" href="css/about.css"/>
+		<link type="text/css" rel="stylesheet" href="css/time.css"/>
+		<link type="text/css" rel="stylesheet" href="css/animate.css"></link>
+	</head>
+<body>
+<!--con start-->
+<div class="time_tit">
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<div style="clear:both;"></div>
+	</ul>
+</div>
+<div class="time_con">
+	
+	<div class="time_con_all">
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2014-9-17</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次接触到了编程，接触了第一个语言：C语言，然后编写了自己的第一个贪吃蛇游戏。</font></strong></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2014-9-26</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次接触到JAVA,让学长帮忙装了java环境，学着写了第一个java程序，helloworld，从此java入门。</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2015-3-4</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次接触了C++，感受到了它的博大精深。</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2015-7-17</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次有了自己的QQ机器人，一直琢磨到至今，已经拥有两个长期稳定运行的机器人，一个运行在QQ（Q号：3148474015），拥有众多粉丝，一个运行在微信公众号（公众号：小何），目前只做API学习，以及测试使用。</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2015-9-3</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次接触到前端技术，html，jsp，css，JavaScript等，感受到了区别于java，c语言的另一种美———解释性语言的魅力。拥有了第一个自己的网页。继续进行了对java更深的学习。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2015-10-3</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次初识微信公众号的开发，用java语言编程，学习了相关API技术，拥有了第一个自己的个人微信公众号:小何。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2016-3-12</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">加入校多火工作室，初识GitHub。加入沪江动漫，创建沪江现今唯一动漫吧：cc猫_吧，发展至今，已有会员一万多，自己拥有近千粉丝，初始网络的营销。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2016-5-1</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">开始学习到数据库相关的知识，对JDBC进行了学习。第一次参加数学建模的比赛，对matlab语言，有了一个比较深的学习，深刻学习了数学建模的思想。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2016-7-15</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">第一次学习了linux，并在虚拟机中搭建了自己linux环境，掌握了linux系统相关的指令和操作。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+        <div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2016-7-20</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">初识大数据，对大数据有了一个初步的了解。开始学习hadoop，用了一个星期搭建了自己的虚拟机集群，开始正式学习hadoop的相关内容，并确定了自己今后的学习方向————大数据。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2016-8-15</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">随学校安排，在达内进行了为期半个多月的Android培训，第一次接触了安卓，并拥有了第一个安卓天气程序。
+				</font></p>
+			</div>
+			<div style="clear:both;">
+			</div>
+			<div class="list animated rotateIn">
+			<div class="imgCon"><img src="images/3.jpg" width="80"/></div>
+			<div class="txtCon">
+				<img src="images/left.png" class="left"/>
+				<p class="con_time"><img src="images/ccstudy.gif"width="60"/><span>2016-10-1</span></p>
+				<p class="con_txt"><font size=6 style="line-height:2">通过GitHub的page，结合前端语言以及相关API的调用，编写了自己的第一个博客。
+				</font></p>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+</div>
+<p class="ok">想听歌了<br/>？点我</p>
+<p class="come_on">想换歌<br/>？点我</p>
+<div class="music">
+	<span class="no">听厌了？点我</span><span class="none">后台播放？点我</span>
+	<div class="douban"></div>
+</div>
+<!--con end-->
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/time.js"></script>
+
+</body>
+</html>

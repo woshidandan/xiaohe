@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>小何博客之技术分享</title>
+		<meta name="Keywords" content="关键词,关键词,关键词"/>
+		<meta name="description" content=""/>
+		<link type="text/css" rel="stylesheet" href="css/public.css"/>
+		<link type="text/css" rel="stylesheet" href="css/index.css"/>
+		<link type="text/css" rel="stylesheet" href="css/article_list.css"/>
+
+	</head>
+<body>
+<!--con start-->
+<div class="con">
+	<!--nav start-->
+	<div class="nav">
+		<div class="nav_t"></div>
+		<div class="nav_c">
+			<ul>
+				<li><a href="./index.html" class="on">首页</a></li>
+				<li><a href="./about.html">个人简介</a></li>
+				<li><a href="./article_list_jy.html">技术分享</a></li>
+				<li><a href="./time.html">自学之路</a></li>
+				<li><a href="./message.html">留言板</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--nav end-->
+	<!--articla start-->
+	<div class="article_left">
+		<div class="article_tuiJ">
+			<h3><a href="#">首页</a>&gt;&gt;<a href="#">技术分享</a></h3>
+			<p>学习是快乐的，独乐乐不如众乐乐</p>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/zhuangbi.png"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">GitHub中Page的使用</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（30）</a><a href="javascript:voide(0)" class="look">浏览（459）</a></p>
+				<p class="article_con">也许，你只认为这是一个普通的博客，其实我要告诉你，这个博客是利用GitHub搭建起来的。你也想提升自己的逼格么，你想不花钱去买服务器买域名么，你想在工作的时候让面试的面试官们耳目一新么，赶快来看一下这次的分享吧。</p>
+				<a href="pagestudy.html" class="readAll">-阅读全文-</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/hadooplogo.png"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">hadoop的安装</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（15）</a><a href="javascript:voide(0)" class="look">浏览（153）</a></p>
+				<p class="article_con">最近在学hadoop,我也学了不少了语言了，但是相比较其他语言来说，大数据的起点太高，本喵安装集群都用了一个多星期，网上各种各样的安装教程也是五花八门，在这里，至于怎么装，我也不费口舌了，把我在安装中遇到的各种问题，以及各种安装要点，结合下面我分享给大家的视频教程，希望能帮助到你们。</p>
+				<a href="https://github.com/woshidandan/hadoop" class="readAll">-赶快点我- </a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/dianzan.png"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">hadoop学习资源</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（66）</a><a href="javascript:voide(0)" class="look">浏览（640）</a></p>
+				<p class="article_con">对于我个人来说，视频学习是最好的学习方法了，这里给大家分享的大数据资源，很多都是网上很难找的到的，我也是使出了我的各种黑科技，嘿嘿。</p>
+				<a href="https://github.com/woshidandan/hadoop" class="readAll">-获取资源-</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/webgongju.png"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">web前端实用小工具</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（77）</a><a href="javascript:voide(0)" class="look">浏览（479）</a></p>
+				<p class="article_con">你是不是总是苦恼，好不容易做出个网页，但是只能自己看，不能把网址发给别人装装逼，这里给大家分享一个工具，可以让全世界看到你写的helloworld，嘿嘿</p>
+				<a href="https://github.com/woshidandan/web/tree/master/%E5%86%85%E7%BD%91%E6%98%A0%E5%B0%84%E5%B7%A5%E5%85%B7" class="readAll">-获取工具-</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/webyuanma.png"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">各类网站源码</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（36）</a><a href="javascript:voide(0)" class="look">浏览（943）</a></p>
+				<p class="article_con">如果你觉得你写的网站牛逼，我只想说，有人比你更牛逼，来来来，老司机开车，赶紧上车学一波前端技术。</p>
+				<a href="https://github.com/woshidandan/web/tree/master/%E7%BD%91%E7%AB%99%E6%BA%90%E7%A0%81" class="readAll">-点我点我-</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/android.png"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">android学习</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（14）</a><a href="javascript:voide(0)" class="look">浏览（130）</a></p>
+				<p class="article_con">因学校的安排，在达内学了半个多月的安卓开发，学到了听多的东西，做了一款天气预报的app，还有一些安卓开发心得，有兴趣的看看吧。</p>
+				<a href="https://github.com/woshidandan/android" class="readAll">-爱我就点-</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="article_tit">
+			<div class="article_tit_pic"><a href="#"><img src="images/weixin.jpg"/></a></div>
+			<div class="article_tit_txt">
+				<h4><a href="#">微信公众号开发</a></h4>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-10-1</a><a href="javascript:voide(0)" class="opine">评论（15）</a><a href="javascript:voide(0)" class="look">浏览（66）</a></p>
+				<p class="article_con">大二有段时间学过微信公众号的开发，网站源码贴在链接里面了，大家也可以关注一下我平时用来开发和测试的公众号：小何 ，它可是一个会自动和你聊天，拥有众多功能的机器人哦</p>
+				<a href="https://github.com/woshidandan/simple-project/tree/master/Weixin" class="readAll">-赶紧看看-</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	<!--	<div class="Index">
+			<ul>
+				<li><a href="#" class="Index_on">首页</a></li>
+				<li><a href="#">上一页</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">下一页</a></li>
+				<li><a href="#">末页</a></li>
+				<li><a href="javascript:void(0)">共5页40条</a></li>
+			</ul>
+		</div>
+		-->
+	</div>
+	<!--article end-->
+
+	<div style="clear:both;"></div>
+</div>
+<div class="return_top"><a href="javascript:void(0)"></a></div>
+<div class="footer">
+	<a href="#">何帅个人博客</a>&nbsp;&nbsp;|&nbsp;&nbsp;QQ:2281444815 &nbsp;&nbsp;|&nbsp;&nbsp;网站开发者：何帅
+</div>
+<!--con end-->
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>

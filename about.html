@@ -1,42 +1,62 @@
-<!doctype html>
+﻿<!DOCTYPE HTML>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>关于小何</title>
-		<meta name="Keywords" content="关键词,关键词,关键词"/>
-		<meta name="description" content=""/>
-		<link type="text/css" rel="stylesheet" href="css/public.css"/>
-		<link type="text/css" rel="stylesheet" href="css/about.css"/>
-
+		<title>个人介绍</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-<body>
+	<body>
 
+		<!-- Header -->
+			<header id="header">
 
-<div class="con">
-	<!--nav start-->
-	<div class="nav">
-		<div class="nav_t"></div>
-		<div class="nav_c">
-			<ul>
-				<li><a href="./index.html" class="on">首页</a></li>
-				<li><a href="./about.html">个人简介</a></li>
-				<li><a href="./article_list_jy.html">技术分享</a></li>
-				<li><a href="./time.html">自学之路</a></li>
-				<li><a href="./message.html">留言板</a></li>
-			</ul>
-		</div>
-	</div>
-	<!--nav end-->
-	<div class="des">
-		<p class="about_tit"><a href="#">首页</a>&nbsp;&nbsp;<b>&gt;&gt;</b>&nbsp;&nbsp;<a href="#">关于我About me</a><span>关于小何</span></p>
-		<section class="about_con">
-			<figure>
-					<section class="tit_pic">
-						<img src="images/psb.jpg"width="300px"alt="小何" title="我是帅哥小何"/>	
-					</section>
-					
-						<span>Just About Me</span>
-						1、南京信息工程在校大三学生一枚;<br />
+				<!-- Logo -->
+					<h1 id="logo"><a href="#">For Me</a></h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">欢迎页</a></li>
+							<li><a href="#one">What I Am</a></li>
+							<li><a href="#two">Who I Do</a></li>
+							<li><a href="#work">相册</a></li>
+							<li><a href="#contact">联系方式</a></li>
+						</ul>
+					</nav>
+
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2>Hey.</h2>
+					</header>
+					<p>很高兴你想来认识我.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What I Am</h2>
+					</header>
+					<p>1、南京信息工程在校大三学生一枚;<br />
 						2、沪江cc猫_吧吧主<br />
 						3、一位不断不断提升自己，热爱学习的90后;<br />
 						<p>
@@ -70,21 +90,69 @@
 						</p>
 						<p>
 						人生的路还很长很长，我只是想希望，当我每次来续写这片文章时，我会比以前更加优秀。2016/10/2
-						</p>
-						<div class="footer">
-	<a href="#">何帅个人博客</a>&nbsp;&nbsp;|&nbsp;&nbsp;QQ:2281444815 &nbsp;&nbsp;|&nbsp;&nbsp;网站开发者：何帅
-</div>
-						<div class="read_me">
-							<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FScnLSQhISEtJCBVZGQ7dnp4" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>
-							<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2281444815&site=qq&menu=yes" style="float:right;"><img src="images/QQ.png" border="0" alt="点击咨询" title="点击咨询"></a>
+						</p></p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+		
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who I Do</h2>
+					</header>
+					<p>
+					每个人的大学都是美好的，我有幸得以佳人陪伴，吃在南京，玩在南京，恋在南京，学在南京。
+					</p>	
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+			
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>相册</h2>
+						<p>爱上这个城市</p>
+						<h3>点击图片查看详情</h3>
+					</header>
+					
+					<!--
+						 Lightbox Gallery
+						 
+						 Powered by poptrox. Full docs here: https://github.com/n33/jquery.poptrox
+					-->
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="6u"><a href="images/university/1.jpg" class="image full l"><img src="images/university/1.jpg" title="好吃的" alt="" /></a></div>
+								<div class="6u"><a href="images/university/2.jpg" class="image full r"><img src="images/university/2.jpg" title="还是好吃的" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/university/3.jpg" class="image full l"><img src="images/university/3.jpg" title="南京大屠杀纪念馆" alt="" /></a></div>
+								<div class="6u"><a href="images/university/4.jpg" class="image full r"><img src="images/university/4.jpg" title="苏州园林" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/university/5.jpg" class="image full l"><img src="images/university/5.jpg" title="雨花台" alt="" /></a></div>
+								<div class="6u"><a href="images/university/6.jpg" class="image full r"><img src="images/university/6.jpg" title="大一时来看望我的好基友阿瑞在中山陵" alt="" /></a></div>
+							</div>
+							<div class="row flush images">
+								<div class="6u"><a href="images/university/7.jpg" class="image full l"><img src="images/university/7.jpg" title="夫子庙" alt="" /></a></div>
+								<div class="6u"><a href="images/university/8.jpg" class="image full r"><img src="images/university/8.jpg" title="忘了这是哪了" alt="" /></a></div>
+							</div>
 						</div>
-			</figure>
-		</section>
-	</div>
-	<!--about me start-->
-	<div class="about">
-		<h3>关于我</h3>
-		<p>
+
+				</div>
+			</section>
+			
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Say Hello.</h2>
+						<p>想认识我么，下面是我的一些联系方式.</p>
+					</header>
+					<div class="box container small">
+							<p>
 			网名(小名)：小何<br />
 			姓名：何帅<br />
 			GitHub主页：<a target="_blank" href="https://github.com/woshidandan">https://github.com/woshidandan</a><br />
@@ -96,23 +164,25 @@
 			爱好：前端后台大数据，小猫小狗小动物<br />
 			座右铭：你不够优秀，是因为你不够孤独。
 		</p>
-	</div>
-	<!--about me end-->
-	<!--article start-->
-	<div class="article_right">
+		<div class="article_right">
 		<div class="weixin">
 			<h3>微信关注我</h3>
 			<img src="images/wx.png"width="250"alt="微信关注我" title="微信关注我"/>
 		</div>
 	</div>
-	<div style="clear:both;"></div>
-	<!--article end-->
-	
-</div>
-<div class="return_top"><a href="javascript:void(0)"></a></div>
 
-<!--con end-->
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"3","bdPos":"left","bdTop":"250"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-<script type="text/javascript" src="js/my.js"></script>
-</body>
+					</div>
+				</div>
+			</section>
+			<footer id="footer">	
+			<div class="read_me">
+	<a href="https://woshidandan.github.io/xiaohe">何帅个人博客</a>&nbsp;&nbsp;|&nbsp;&nbsp;QQ:2281444815 
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2281444815&site=qq&menu=yes" "><img src="images/QQ.png" border="0" alt="点击咨询" title="点击咨询"></a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;网站开发者：何帅					
+							<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=FScnLSQhISEtJCBVZGQ7dnp4" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>
+							
+						</div>
+						</footer>
+
+	</body>
 </html>
