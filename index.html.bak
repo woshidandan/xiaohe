@@ -115,12 +115,12 @@ var _hmt = _hmt || [];
                 
 
 				<div class="article_tit">
-				<div class="article_tit_pic"><a  ><img src="images/learnnolong.jpg"/></a></div>
+				<div class="article_tit_pic"><a  ><img src="images/naodong.png"/></a></div>
 				<div class="article_tit_txt">
 					<h4><a  >别扶我，我还能学</a></h4>
 					<p><a   >小何</a><a   class="Clas"></a><a   class="time">2016-11-17</a><a   class="opine">评论（20）</a><a   class="look">浏览（296）</a></p>
-					<p class="article_con">感谢有你，带给我这一场场技术的盛宴，我将会一如既往的，秉承一颗谦卑好学的心，去探索关于你的更多的秘密。</p>
-					<a href="./article2016117.html" class="readAll">阅读本文</a>
+					<p class="article_con">感谢有你，带给我这一场场技术的盛宴，我将会一如既往的秉承一颗谦卑好学的心，去探索关于你的更多的秘密。</p>
+					<a href="./article2016111.html" class="readAll">阅读本文</a>
 				</div>
 				<div style="clear:both;"></div>
 			    </div>
