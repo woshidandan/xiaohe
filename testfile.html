@@ -1,21 +1,91 @@
-﻿<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>你好</title> 
-</head> 
+﻿<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5 canvas测试</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<style media="screen">
+           body {
+		    position:fixed;
+                overflow: hidden;
+               
+               
+                padding: 0;
+            }
 
-<body> 
-<div id="aa"></div> 
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="js/rainyday.min.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+                    engine.rain([ [3, 2, 2] ], 100);
+                };
+                image.crossOrigin = 'anonymous';
+                image.src = 'img/U1Tqqdw.jpg';
+            }
+        </script>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body onload="run();">
+	
+		<header class="htmleaf-header">		
+         <h2>i like study</h2>
+				<pre>
+	<font size=4 style="line-height:2">
+	                                      <h1>住在手机里的朋友</h1>
+  　你有多少住在手机里的朋友？
 
-<script language="javascript"> 
-var fso, ts, s ; 
-var ForReading = 1; 
+　　初次相识的喜悦，让你觉得似乎找到了知音。于是，对于投缘的人，开始了较频繁的交往。渐渐地，初识的喜悦退尽，接下
+来就是仅仅保持着联系，平淡到偶尔在节假曰发短信互致问候。偶尔有一天，你发现，你发出的短信石沉大海。你的心也凉了下
+去。几次没有回音后，你也许会删掉那一个偶然在人海中拾来的电话号码，把那个偶尔认识的人完全淡忘。这个曾经的朋友，便
+像人海中的一朵浪花，偶尔调皮地与你相遇，然后被你记忆的余光蒸发。你还会与新的人相识、相交，交换手机号、名片，你还
+会不断地让新朋友住进你的手机。
 
-fso = new ActiveXObject("Scripting.FileSystemObject"); 
-ts = fso.OpenTextFile("images\data.txt", ForReading); 
-s = ts.ReadLine(); 
-document.getElementById("aa").innerHTML=s; 
-</script> 
+　　最怕的是突然有一天，你的手机不见了，号码簿上的朋友们似乎一下子全部消失了，你的心也空掉了一块，尤其是那些亲朋
+好友或老同学的号码不见了，就像不见了珍贵的首饰，令人难过，但还能通过其他方式寻回，而那些浪花般有缘邂逅过的朋友，
+因一次偶然不见了他们的号码，这一生，也许你永远不会再与他们相遇，虽然心里也会觉得可惜，但就像每天梳头掉几根头发一
+样，并不太在意。可是，某一天，你的手机上会收到一些陌生的节日问候短信，你会不好意思问对方是谁，只是回复一条祝福的
+短信过去。几回这样的“匿名”信息后，这个也许曾经熟悉的陌生号码，就不会再来短信。这时，你会遗憾，但并不会难过。
+	 
+    这些流水般的友谊，落花无情，还有花开的。
 
-</body> 
-</html> 
+　　最让你受不了的是，某天想起曾经有一阵子还相交频繁的友人，于是满怀热情地打电话给他，他居然在电话中来一句：“喂，
+你是谁？”你的热情骤降到零点，根本没有心思再说什么，神伤地挂掉电话。也许对方早已把你的电话号码删掉了，也许，对方
+也是因为手机被盗或者是换号等原因丢失了你的号码，反正你不再是住在他手机里的朋友，当然，你们就永远不会再成为朋友了。
+
+　　有时你不甘心，会发条短信，告诉对方你是谁，对方会解释，因换新手机了，还没来得及把你的号码复制过来，没听出你的
+声音，对不起。这些理由，也会让你的热情打折扣。毕竟是萍水相逢啊。世态炎凉，准又能记得谁，你不过是曾经暂住在他手机
+里的朋友，确切地说，是手机里的过客，也等于他生活中的过客。心理上的疏远，被忙碌的生活再打一次折，这份友谊就算彻底
+出局了。
+
+　　我们的社交圈子在扩大，交往常常目的明确，点个头的熟人渐渐多了，交心的友人却渐渐少了，是人们的情感出了问题，还
+是发达的通信惹的祸？我们的友情像快餐一样，来得快，去得快，我们抱怨知音难觅，却没有想一想我们花了多少时间和心情去
+经营友情。我决定把自己手机里居住的朋友再迁移到纸质笔记本中，备一份。能被人备份号码，友谊也就被备份了，如果对方也
+会像你一样，把你的电话号码备一份，你们的友情就会在浪潮汹涌过后，成为留在岸上的最值得珍藏的贝壳。
+    
+	而你我，不再只是住在对方手机里的朋友，而是住在对方的生活里，甚至生命里。
+	 </font>	
+
+
+
+						</pre>
+
+
+		</header>
+		
+	
+	<img id="background" alt="background" src="img/U1Tqqdw.jpg" />
+</body>
+</html>
