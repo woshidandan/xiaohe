@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
 			<div class="article_tit_pic"><a href="#"><img src="images/330492.jpg"/></a></div>
 			<div class="article_tit_txt">
 				<h4><a href="#">为我们的GitHub Page配上后台？</a></h4>
-				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2017-1-20</a><a href="javascript:voide(0)" class="opine">评论（36）</a><a href="javascript:voide(0)" class="look">浏览（366）</a></p>
+				<p><a href="javascript:voide(0)" class="writer">小何</a><a href="#" class="Clas"></a><a href="javascript:voide(0)" class="time">2016-1-20</a><a href="javascript:voide(0)" class="opine">评论（36）</a><a href="javascript:voide(0)" class="look">浏览（366）</a></p>
 				<p class="article_con">这是一篇，网上绝无仅有的干货~</p>
 				<a href="https://github.com/woshidandan/Struts/blob/master/Struts2Blog.md" class="readAll">-我要干货-</a>
 			</div>
