@@ -8,6 +8,27 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="js/index2.js"></script>
+		<script>
+ window.onload = function () {
+            var OriginTitile = document.title;
+            var titleTime;
+            document.addEventListener('visibilitychange', function () {
+                if (document.hidden) {
+                    $('[rel="shortcut icon"]').attr('href', "/Content/Images/fail.ico");
+                    document.title = '(●—●)喔哟，崩溃啦！';
+                    clearTimeout(titleTime);
+                }
+                else {
+                    $('[rel="shortcut icon"]').attr('href', "/Content/Images/icon.png");
+                    document.title = '(/≧▽≦/)咦！又好了！' + OriginTitile;
+                    titleTime = setTimeout(function () {
+                        document.title = OriginTitile;
+                    }, 2000);
+                }
+            });
+        }
+
+</script>
 </head>
 
 <body>
@@ -15,7 +36,7 @@
 	<div class="box page1 comeout">
     	<div class="w960">
 		  <div class="page1_02">
-            	<div class="page1_02_top"><a href="particleeffect.html"><img src="images/second.jpg"></div>
+            	<div class="page1_02_top"><a href="particleeffect.html" target="_blank"><img src="images/second.jpg"></div>
             </div>
         	<div class="page1_01"><a href="particleeffect.html"><img src="images/first.jpg"></div>
           
@@ -24,23 +45,23 @@
     </div>
     <div class="box page2 comeout">
     	<div class="w960">
-        	<div class="page2_01"><a href="circle.html"><img src="images/b3.png"></div>
+        	<div class="page2_01"><a href="circle.html" target="_blank"><img src="images/b3.png"></div>
     	</div>
     </div>
 	  <div class="box page3 comeout">
     	<div class="w960">
-        	<div class="page2_01"><a href="vision.html"><img src="images/seedata.png"></div>
+        	<div class="page2_01"><a href="vision.html" target="_blank"><img src="images/seedata.png"></div>
     	</div>
     </div>
   <div class="box page4 comeout">
     	<div class="w960">
-        	<div class="page2_01"><a href="tree.html"><img src="images/third.png"></div>
+        	<div class="page2_01"><a href="tree.html" target="_blank"><img src="images/third.png"></div>
     	</div>
     </div>
   
 	<div class="box page5 comeout">
     	<div class="w960">
-        	<div class="page2_01"><a href="www.xiaohegithub.cn"><img src="images/last.png"></div>
+        	<div class="page2_01"><a href="www.xiaohegithub.cn" target="_blank"><img src="images/last.png"></div>
     	</div>
     </div>
 

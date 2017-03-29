@@ -36,7 +36,7 @@ var self = window;
 		 * List words.
 		 */
 		
-		words = [ 'teach', 'learn', 'correct', 'output' ],
+		words = [ 'teach', 'train', 'correct', 'output' ],
 		
 		/*
 		 * List colors.
