@@ -58,17 +58,15 @@ var _hmt = _hmt || [];
 </video>
 <!-- 雨滴效果 -->
 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 <script>
-var cloudTieConfig = {
-  url:https://woshidandan.github.io/xiaohe/message, 
-  sourceId: "message",
-  productKey: "1d79c9ad8d64463f9e452e8d0acb9254",
-  target: "cloud-tie-wrapper"
-};
-var yunManualLoad = true;
-Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "message",
+    productKey: "1d79c9ad8d64463f9e452e8d0acb9254",
+    target: "cloud-tie-wrapper"
+  };
 </script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 <!-- 多说公共JS代码 end -->
 
 	<div style="clear:both;"></div>
