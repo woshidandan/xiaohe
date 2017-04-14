@@ -57,24 +57,17 @@ var _hmt = _hmt || [];
    
 </video>
 <!-- 雨滴效果 -->
-<canvas id="canvas" style="position: absolute;top:58%; height: 600%;width:100% ">
-</canvas>
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="message" data-title="给我留言" data-url="https://woshidandan.github.io/xiaohe/message"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+
+<!-- <!--PC版-->
+<div id="SOHUCS" sid="message" ></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"xiaohe2016"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
+window.changyan.api.config({
+appid: 'cysWi0hw6',
+conf: 'prod_47496bb98778d4f44cb85d4d011f4cce'
+});
+</script>
+	<!--多说公共JS代码 end -->
 
 	<div style="clear:both;"></div>
 	<!--article end-->
