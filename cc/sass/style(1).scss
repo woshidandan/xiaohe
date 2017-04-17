@@ -1,0 +1,841 @@
+$font-primary: 'Roboto', Arial, serif;
+$font-secondary: 'Roboto Slab', Arial, sans-serif;
+// Overrides
+$grid-gutter-width: 40px !default; 
+$border-radius-base:  4px !default;
+$padding-base-vertical: 14px !default;
+
+$brand-primary: #FA7E0A !default;
+$brand-secondary: #1fb5f6 !default; 
+
+$brand-white: #fff;
+$brand-black: #000;
+$brand-lighter: #727272;
+$brand-selection-color: #b7c2c2;
+$brand-body-color: #fcfcfc;
+$brand-body-bg: #f9f7f7;
+
+
+$input-border-focus: $brand-primary !default;
+$form-group-margin-bottom: 30px !default;
+
+
+
+// Mixin
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 		all $transition ease;
+    transition:         all $transition ease;
+}
+@mixin inline-block() {
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+@mixin flex() {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin flex() {
+	display: -webkit-box;      
+  	display: -moz-box;         
+  	display: -ms-flexbox;      
+  	display: -webkit-flex;     
+  	display: flex;             
+}
+@mixin flexwrap() {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap; 
+	-moz-flex-wrap: wrap; 
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?srf3rx');
+	src:url('../fonts/icomoon/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.ttf?srf3rx') format('truetype'),
+		url('../fonts/icomoon/icomoon.woff?srf3rx') format('woff'),
+		url('../fonts/icomoon/icomoon.svg?srf3rx#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin icomoon() {
+	
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+// Import 
+@import 'bootstrap/mixins';
+@import 'bootstrap/variables';
+
+
+
+
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+
+// Template Base
+body {
+	font-family: $font-primary;
+	line-height: 1.8;
+	font-size: 20px;
+	background: lighten($brand-black, 94%);
+	font-weight: 300;
+	overflow-x: hidden;
+
+	&.menu-show {
+		overflow: hidden;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+	}
+}
+#fh5co-wrapper {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	> div {
+		width: 100%;
+		height: 100%;
+		overflow-y: hidden;
+	}
+}	
+a {
+	color: $brand-primary;
+	@include transition(.5s);
+	&:hover{
+		text-decoration: underline;
+		color: $brand-primary;
+	}
+	&:focus, &:active {
+		outline: none;
+	}
+}
+p, span {
+	margin-bottom: 1.5em;
+	font-size: 18px;
+	color: $brand-lighter;
+	font-weight: 300;
+	font-family: $font-primary;
+}
+span{
+	font-size: 18px;
+	color: rgba($brand-lighter,.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: rgba($brand-black,.8);
+	font-family: $font-secondary;
+	font-weight: 300;
+	margin: 0 0 30px 0;
+}
+::-webkit-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::-moz-selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+::selection {
+  color: $brand-body-color;
+  background: $brand-selection-color;
+}
+
+#fh5co-page {
+	position: relative;
+	-webkit-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-moz-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-ms-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-o-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	background: $brand-white;
+	.menu-show & {
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+
+
+#fh5co-main-nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.8);
+	z-index: 1002;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-moz-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-ms-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-o-transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	transition: all .8s cubic-bezier(.175, .885, .32, 1.275);
+	-webkit-transform: scale(0.0);
+	-moz-transform: scale(0.0);
+	-ms-transform: scale(0.0);
+	-o-transform: scale(0.0);
+	transform: scale(0.0);
+	overflow-y: scroll;
+	.fh5co-nav-toggle {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		padding: 20px;
+		height: 50px;
+		width: 50px;
+		background: rgba(0,0,0,.1);
+		line-height: 0;
+		padding: 0!important;
+		visibility: hidden;
+		opacity: 0;
+		@include border-radius(50%);
+		@include transition(.3s);
+		&:hover {
+			background: rgba(0,0,0,.7);
+		}
+		i {
+			top: 19px!important;
+			left: 0!important;
+			margin: 0!important;
+			padding: 0!important;
+			line-height: 0;
+			text-indent: 0;
+		}
+		&.show {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.menu-show & {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		transform: scale(1.0);
+	} 
+	ul {
+		text-align: center;
+		padding: 50px 0 0 0;
+		margin: 0;
+		@media screen and (max-width: $screen-sm) {
+			padding: 20px 0 0 0;
+		}
+		li {
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+			a {
+				display: block;
+				width: 100%;
+				color: rgba(255,255,255,1);
+				font-size: 30px;
+				padding: 10px 20px;
+				@include border-radius(40px);
+
+				@media screen and (max-width: $screen-sm) {
+					font-size: 30px;
+					padding: 10px 0;
+				}
+				&:hover {
+					background: rgba(0,0,0,.4);
+				}
+				&:hover, &:active, &:focus {
+					color: rgba(255,255,255,.8);
+					outline: none;
+					text-decoration: none;
+				}
+			}
+			&.active {
+				a {
+					color: rgba(255,255,255,.8);
+					background: rgba(0,0,0,.4);
+				}
+			}
+			@media screen and (max-width: $screen-sm) {
+				display: block;
+			}	
+		}
+		
+	}
+}
+.fh5co-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+	@media screen and (max-width: $screen-sm) {
+		display: block!important;
+		height: inherit!important;
+		width: inherit!important;
+	}
+	.fh5co-table-cell {
+		width: 100%;
+		height: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		@media screen and (max-width: $screen-sm) {
+			display: block!important;
+			height: inherit!important;
+			width: inherit!important;
+		}
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	@include transition(.3s);
+	&.btn-primary {
+		background: $brand-primary;
+		color: $brand-white;
+		border: none!important;
+		border: 2px solid transparent!important;
+		&:hover, &:active, &:focus {
+			box-shadow: none;
+			background: $brand-primary;
+		}
+	}
+	&:hover, &:active, &:focus {
+		background: #393e46!important;
+		color: $brand-white;
+		outline: none!important;
+	}
+	&.btn-default {
+		&:hover, &:focus, &:active {
+			border-color: transparent;
+		}
+	}
+}
+
+// Header START
+header{
+	padding: 3em 0;
+	@media screen and (max-width: $screen-sm) {
+		padding: 2em 0;
+	}
+	.fh5co-navbar-brand{
+		float: left;
+		width: 100%;
+		position: relative;
+		h1{
+			width: 100%;
+			float: left;
+			display: block;
+		}
+		.fh5co-logo{
+			font-size: 35px;
+			text-transform: uppercase;
+			color: $brand-black;
+			font-weight: 300;
+			i{
+				font-size: 50px;
+			}
+			&:hover{
+				text-decoration: none !important;
+				color: $brand-black !important;
+			}
+			&:active, &:focus {
+				outline: none;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+// Burger Menu
+.fh5co-nav-toggle {
+   cursor: pointer;
+   text-decoration: none;
+   position: absolute !important;
+   top: 0;
+   right: 0;
+   &.active i {
+		&::before, &::after {
+			background: $brand-white;
+		}
+  }
+  &.dark {
+  	&.active i {
+			&::before, &::after {
+				background: $brand-white;
+			}
+	  }
+  }
+  &:hover, &:focus, &:active {
+  	outline: none;
+  	border-bottom: none!important;
+  }
+  i {
+  	  position: relative;
+	  @include inline-block;
+	  width: 30px;
+	  height: 2px;
+	  color: $brand-black;
+	  font:bold 14px/.4 Helvetica;
+	  text-transform: uppercase;
+	  text-indent:-55px;
+	  background: $brand-black;
+	  transition: all .2s ease-out;
+	  .menu-show & {
+			background: $brand-white;
+			color: $brand-white;
+		}
+		 &::before, &::after {
+	  	  content:'';
+		  width: 30px;
+		  height: 2px;
+		  background: $brand-black;
+		  position: absolute;
+		  left:0;
+		  .menu-show & {
+				background: $brand-white;
+			}
+		  @include transition(.2s);
+	  }
+  }
+  &.dark {
+  	i {
+	  	position: relative;
+		  color: $brand-black;
+		  background: $brand-black;
+		  transition: all .2s ease-out;
+			 &::before, &::after {
+			  background: $brand-black;
+			  @include transition(.2s);
+		  }
+	  }
+  }
+}
+
+.fh5co-nav-toggle i::before {
+  top: -7px;
+}
+.fh5co-nav-toggle i::after {
+  bottom: -7px;
+}
+.fh5co-nav-toggle:hover i::before {
+  top: -10px;
+}
+.fh5co-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+.fh5co-nav-toggle.active i {
+	background: transparent;
+}
+.fh5co-nav-toggle.active i::before {
+  top:0;
+  -webkit-transform: rotateZ(45deg);
+     -moz-transform: rotateZ(45deg);
+      -ms-transform: rotateZ(45deg);
+       -o-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+.fh5co-nav-toggle.active i::after {
+  bottom:0;
+  -webkit-transform: rotateZ(-45deg);
+     -moz-transform: rotateZ(-45deg);
+      -ms-transform: rotateZ(-45deg);
+       -o-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+.fh5co-nav-toggle {
+	float: right;
+	z-index: 1003;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	margin-top: 0px;
+  	@media screen and (max-width: $screen-sm) {
+  		display: block;
+  		top: 0px;
+  		// margin-top: 2.5em;
+  	}
+  
+}
+
+#fh5co-photos-section, #fh5co-contact-section, 
+#fh5co-services-section, #fh5co-about-section,
+#fh5co-map-section{
+	padding-bottom: 5em;
+}
+#fh5co-intro-section{
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+	// border-bottom: 1px solid rgba($brand-black,.06);
+}
+
+// heading
+.intro-heading{
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1.5;
+	// margin-bottom: 10px;
+	// text-transform: uppercase;
+	@media screen and (max-width: $screen-sm){
+		font-size: 30px;
+	}
+}
+
+//Photos
+.ri-grid ul li {
+	background: transparent !important;
+	a{
+		.desc{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			background: rgba($brand-primary,.8);
+			opacity: 0;
+			padding-top: 35%;
+			@include transition(.3s);
+			h3{
+				font-size: 20px;
+				color: rgba($brand-white,1);
+				text-decoration: none;
+				@include transition(.6s);
+				span{
+					color: rgba($brand-white,.7);
+					font-size: 12px;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+			}
+		}
+		&:hover, &:focus{
+			.desc{
+				opacity: 1;
+			}
+			img{
+				-webkit-transform: scale(1.0);
+			   -moz-transform: scale(1.0);
+			   -ms-transform: scale(1.0);
+			   -o-transform: scale(1.0);
+			   transform: scale(1.0);
+			   border: 1px solid red;
+			}
+		}
+	}
+}
+
+// gallery
+
+.grid-photo{
+	position: relative;
+	width: 100%;
+	height: 350px;
+	float: left;
+	margin-bottom: 30px;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	@include border-radius(7px);
+	.desc{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba($brand-primary,.8);
+		padding-top: 140px;
+		opacity: 0;
+		@include transition(.3s);
+		@include border-radius(7px);
+		h3{
+			color: rgba($brand-white,1);
+			text-decoration: none;
+			margin-bottom: 5px;
+		}
+		span{
+			color: rgba($brand-white,.7);
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+	&:hover, &:focus{
+		.desc{
+			opacity: 1;
+		}
+	}
+}
+
+.fh5co-counters {
+	padding: 3em 0;
+	background: lighten($brand-black, 90%);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	.heading-section{
+		h2{
+			color: $brand-white;
+			font-weight: 400;
+			font-size: 40px;
+		}
+	}
+	.fh5co-counter {
+		font-size: 60px;
+		display: block;
+		color: $brand-white;
+		font-family: $font-primary;
+		width: 100%;
+		font-weight: 700;
+		margin-bottom: 0em;
+	}
+	.fh5co-counter-label {
+		color: $brand-white;
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 5px;
+		margin-bottom: 2em;
+		display: block;
+	}
+}
+
+//Services
+.services{
+	position: relative;
+	padding: 30px;
+	padding-top: 90px;
+	margin-top: 60px;
+	background: rgba($brand-white,1);
+	border: 1px solid rgba($brand-black,.1);
+	float: left;
+	width: 100%;
+
+	@media screen and (max-width: $screen-md) {
+		margin-bottom: 60px;
+	}
+	@media screen and (max-width: $screen-xs) {
+		margin-bottom: 30px;
+	}
+	span{
+		// border: 1px solid red;
+		display: block;
+		position: absolute;
+		top: -30px;
+		left: 0;
+		width: 100%;
+		i{
+			font-size: 60px;
+			padding: 30px;
+			color: $brand-primary;
+			background: $brand-white;
+			border: 1px solid rgba($brand-black,.1);
+			@include border-radius(50%);
+		}
+	}
+}
+
+//About
+#fh5co-about-section{
+	.about{
+		width: 100%;
+		margin-bottom: 40px;
+		>img{
+			width: 150px;
+			height: 150px;
+			@include border-radius(50%);
+		}
+	}
+}
+
+// Contact
+.contact-info{
+	margin-bottom: 4em;
+	padding: 0;
+	li{
+		// font-size: 16px;
+		list-style: none;
+		margin: 0 0 20px 0;
+		position: relative;
+		padding-left: 40px;
+		color: $brand-lighter;
+
+		i{
+			position: absolute;
+			top: .3em;
+			left: 0;
+			font-size: 22px;
+			color: $brand-lighter;
+		}
+		a{
+			color: $brand-lighter;
+		}
+		
+	}
+}
+.form-control {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border: 1px solid rgba(0,0,0,.1);
+	font-size: 18px;
+	
+	font-weight: 300;
+	@include border-radius(0px);
+	
+	&:focus, &:active {
+		box-shadow: none;
+		border: 1px solid rgba(0,0,0,.8);
+	}
+
+}
+input[type="text"] {
+	height: 50px;
+}
+.form-group {
+	margin-bottom: 30px;
+}
+
+// Map
+#map {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	@media screen and (max-width: $screen-sm) {
+		height: 200px;
+	}
+}
+
+// footerf
+#footer{
+	border-top: 1px solid rgba($brand-black,.1);
+	padding: 4em 0;
+	h3{
+		font-size: 18px;
+		font-weight: 400;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			font-size: 18px;
+			list-style: none;
+			margin-bottom: 0;
+			a{
+				color: $brand-lighter;
+			}
+		}
+	}
+	.float{
+		width: 50%;
+		float: left;
+		@media screen and (max-width: $screen-sm) {
+			width: 100%;
+		}
+	}
+	.copy-right{
+		padding-top: 4em;
+	}
+	a{
+		color: rgba($brand-black,1);
+		&:hover, &:focus{
+			text-decoration: none;
+			color: $brand-primary;
+		}
+	}
+
+}
+.fh5co-social-icon{
+	a{
+		padding: 0 5px;
+		i{
+			color: $brand-black;
+		}
+		&:hover, &:focus{
+			text-decoration: none;
+		}
+	}
+}
+
+//heading section
+.heading-section{
+	margin-bottom: 3em;
+	h2{
+		font-size: 34px;
+		font-weight: 300;
+	}
+}
+
+// Magnific Popup
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.animate-box {
+	.js & {
+		opacity: 0;
+	}
+}
