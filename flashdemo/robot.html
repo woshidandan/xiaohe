@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>AlphaGo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <style> 
+    #mysee{
+      position:fixed;
+      left:9%;
+      top:38%;
+      width:82%;
+      font-weight:100;
+      text-align:center;
+      font-size:32px;
+      line-height:50px;
+      margin:-120px auto;
+      color:#000000;
+      opacity:1; 
+      display:none; 
+    }
+    #robot{
+      position:fixed;
+      left:25%;
+      top:52%;
+      width:50%;
+      padding-bottom:5px;
+      padding-top:5px;
+      font-weight:100;
+      text-align:center;
+      font-size:32px;
+      line-height:50px;
+      margin:-83px auto 0px auto;
+      border:0px;
+      opacity:0.5;
+      background:transparent;
+      border-bottom:1px solid #000000;
+      color:#000000;
+      outline:none;
+      display:none;
+    }
+    #robot:focus,#robot:hover{
+      border:0px;
+      color:#000000;
+      border-bottom:1px solid #000000;
+      background:transparent;
+      line-height:50px;
+      outline:none;
+      opacity:1;
+    }
+	td {padding-left: 2cm}
+    </style>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="CanvasRenderer" src="./js/CanvasRenderer.js"></script>
+</head>
+
+  <body>  
+<style>
+        abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+            margin: 0;
+            padding: 0;
+            cursor: url('images/shubiao.ico'),auto;
+        }
+</style>
+
+  <div id="mysee" style="display: block; opacity: 1;">
+ <input id="robot" name="robot" placeholder="" autofocus="autofocus" required="required" type="text" maxlength="30" value="" style="display: block;" onkeypress="showHint(this.value)"/>
+<p><span id="txtHint">你好，我是阿尔法狗，有什么可以帮助您的？</span></p></div>
+    <form id="myinputform" name="myinputform" role="form" action="javascript:$.SendMessage();">
+    <input id="robot" name="robot" placeholder="" autofocus="autofocus" required="required" type="text" maxlength="30" value="" style="display: block;" onkeypress="showHint(this.value)"/>
+
+    </form>
+
+<script>
+
+var xmlHttp
+
+function showHint(str)
+
+{
+
+            if (event.keyCode==13)
+
+                   {
+
+                            Send(str);
+
+                   } 
+
+}
+
+function Send(str)
+
+{
+
+ if (str.length==0)
+
+    {
+
+    document.getElementById("txtHint").innerHTML="";
+
+    return;
+
+    }
+
+          xmlHttp=GetXmlHttpObject()
+
+                     if (xmlHttp==null)
+
+                            {
+
+                            alert ("您的浏览器不支持AJAX！");
+
+                            return;
+
+                            }
+
+                     var url="http://www.tuling123.com/openapi/api?key=c3eaa6660cfc4ba09ae1ebb98ec6c49e";
+
+                     url=url+"&info="+str;
+
+                     url=url+"&userid=1234" ;
+
+                     xmlHttp.onreadystatechange=stateChanged;
+
+                     xmlHttp.open("GET",url,true);
+
+                     xmlHttp.send(null);
+
+                      document.getElementById("robot").value="";
+
+}
+
+function stateChanged()
+
+{
+
+if (xmlHttp.readyState==4)
+
+{
+
+var msg=eval('(' + xmlHttp.responseText + ')'); 
+
+ 
+
+document.getElementById("txtHint").innerHTML=msg.text;
+
+}
+
+}
+
+function GetXmlHttpObject()
+
+{
+
+  var xmlHttp=null;
+
+  try
+
+    {
+
+    // Firefox, Opera 8.0+, Safari
+
+    xmlHttp=new XMLHttpRequest();
+
+    }
+
+  catch(e)
+
+    {
+
+    // Internet Explorer
+
+    try
+
+      {
+
+      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+
+      }
+
+    catch (e)
+
+      {
+
+      xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+      }
+
+    }
+
+return xmlHttp;
+
+}
+
+</script>
+<a>by小何</a>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<a>&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288&#12288</a>
+<embed src="images/dog.swf" flashvars="vcastr_file=2.flv&IsAutoPlay=0&LogoUrl=images/logo.jpg" quality="high"  width="300" height="225" ></embed> 
+
+
+</body></html>
