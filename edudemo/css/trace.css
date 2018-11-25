@@ -1,0 +1,27 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color:#10729c;
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, #10729c, #000030 100%);
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #10729c, #000030 100%);
+  background-image: -o-radial-gradient(50% 50%, ellipse cover, #10729c, #000030 100%);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, #10729c, #000030 100%);
+  background-image: radial-gradient(50% 50%, ellipse cover, #10729c, #000030 100%);
+}
+header {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+header h1 {
+  text-transform: uppercase;
+  margin-left: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.8;
+  color: #fff;
+}

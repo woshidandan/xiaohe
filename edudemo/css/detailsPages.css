@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.dtTitBg a {
+	color: #FFFFFF;
+}
+
+.dtTitBg {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*background:url(../img/blogBg-17-1.jpg) no-repeat;*/
+}
+.homeList{
+		position: relative;
+}
+
+.homeList ul{
+	position: absolute;
+	top: 20px;
+	right:40px ;
+}
+.homeList h3 a{
+	font-size: 28px;
+	font-weight: 500;
+	color: #FFF;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+.homeList h3 a:hover{
+	color: #449DBA;
+}
+
+.homeList ul li{
+	float: right;
+	margin-right: 40px;
+	list-style: none;
+}
+.homeListMenu li a:hover{
+	border-bottom:2px solid #449DBA;
+	color:#449DBA;
+}
+
+.TitContent {
+	text-align: center;
+	line-height: 3;
+}
+
+.TitContentMain {
+	color: #FFFFFF;
+	width: 800px;
+	margin: 0 auto;
+}
+.TitContentMain h2{
+	font-size: 24px;
+}
+
+.dt-main{
+	width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	overflow: hidden;
+}
+.dt-content p{
+	text-indent: 2em;
+	line-height: 3;
+	color: #666;
+}
+.dt-content img{
+	clear: both; 
+	display: block; 
+	margin:auto; 
+}
+.dt-content h2,h3,h4{
+	color:#666666;
+	text-align: center;
+}
+.dt-content h2{font-size: 20px;}
+
+.dtConNotes{
+	position:absolute;
+	bottom:-5px;
+	right: 10px;
+	color: #666666;
+	font-size: 12px;
+}
+
+
+.effect {
+	position: relative;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect::before, .effect::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	top: 100%;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	-moz-border-radius: 100px / 10px;
+	border-radius: 100px / 10px;
+}
+.copyright-2 {
+	width: 90%;
+	height: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	color: #666666;
+}
+.copyright-2 a{
+	color: #000000;
+}
+
