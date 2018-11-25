@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>吴恩达简介</title>
+		<title>搭建博客</title>
 		<meta name="Keywords" content="关键词,关键词,关键词"/>
 		<meta name="description" content=""/>
 		<link type="text/css" rel="stylesheet" href="css/public.css"/>
@@ -41,10 +41,10 @@ var _hmt = _hmt || [];
 		<div class="nav_c">
 			<ul>
 				<li><a href="./index.html" class="on">首页</a></li>
-				<li><a href="./">    </a></li>
+				<li><a href="./about.html">    </a></li>
 				<li><a href="./article_list_jy.html">微课视频</a></li>
-				<li><a href="./">    </a></li>
-				<li><a href="./about.html">关于我们</a></li>
+				<li><a href="./time.html">    </a></li>
+				<li><a href="./message.html">关于我们</a></li>
 			</ul>
 		</div>
 	</div>
@@ -53,13 +53,13 @@ var _hmt = _hmt || [];
 
 	<!-- 视频插入 -->
 <video  width="544" height="360" controls="controls" autoplay="autoplay" style="clear:both;display:block;margin:auto">
-   <source  src="images/dashu.mp4" type="video/mp4"></source>
+   <source  src="images/heshuai.mp4" type="video/mp4"></source>
 	
 </video>
 </video>
 <!-- 雨滴效果 -->
-<canvas id="canvas" style="position: absolute;top:58%; height: 1000%;width:100% ">
-</canvas>
+<!-- <canvas id="canvas" style="position: absolute;top:58%; height: 1000%;width:100% ">
+</canvas> -->
 
 <!--PC版-->
 <div id="SOHUCS" sid="message" ></div>
