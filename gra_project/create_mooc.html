@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<title>在github中使用pages上传自己的网页 --小何</title>
+<link rel="shortcut icon" href="bitbug_favicon.ico" />
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://github.com/woshidandan">小何</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+		<div class="blogStats">
+			
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body">
+<p>
+这这开始之前，我希望您能了解到下面三点：<hr>
+（1）掌握基本的搭建网站的语言，jsp，html，css，您可以在慕课网学到相关基础知识。<hr>
+（2）您对GitHub有一定的了解。<hr>
+（3）希望您能保持开源共享的态度。<hr>
+</p>
+
+<p>&nbsp;</p>
+<p><strong>开始教程之前的准备工作：</strong></p>
+<p><strong>1、需要你自己写的网页文件。</strong></p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305135133440-1617205021.png" alt="" width="488" height="133" /></p>
+<p><strong>2、注册Github。</strong></p>
+<p><strong>3、下载安装git。下载地址https://git-scm.com/downloads</strong></p>
+<p>&nbsp;</p>
+<p><strong>教程开始：</strong>（以下出现的test指你的网页名或者你想起的一切名字）</p>
+<p><strong>步骤一</strong>：登录到Github上，新建一个repo，命名为test，勾选 initialize this repository with a README，点击create repository。</p>
+<p>&nbsp;</p>
+<p>&nbsp;<img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305134947346-1921005167.png" alt="" width="325" height="150" /></p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305135528627-97762586.png" alt="" width="622" height="401" /></p>
+<p>&nbsp;</p>
+<p><strong>步骤二</strong>：打开settings，有一个Github Pages 的设置，点击Launch automatic page generator（启动自动页面生成器）。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305140204096-424861698.png" alt="" width="658" height="96" /></p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305140522830-7799375.png" alt="" width="674" height="246" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>步骤三</strong>：点击页面最后的continue to layouts，然后就可以进入设置你的页面主题，你会说这不是我的网页呀，别急嘛，先选择一个主题，点击 publish pages。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305141007221-1678443414.png" alt="" /></p>
+<p>&nbsp;</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305141341080-929861094.png" alt="" width="664" height="283" /></p>
+<p>&nbsp;</p>
+<p>这个时候会出现你的网页的网址，也就是下图的 http://jiayili.github.io/test.复制打开这个网址，你看到了什么？</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305141706065-643882140.png" alt="" width="712" height="102" /></p>
+<p>&nbsp;</p>
+<p>哇塞，这不是刚自己设置选择的主题页面吗？</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305141935393-1254718979.png" alt="" width="710" height="419" /></p>
+<p>&nbsp;</p>
+<p>好了，别激动了，真正让一个小白你发疯的阶段开始了，有了自己的网址，但页面显示的是什么鬼？</p>
+<p>至此以上，github上要处理的操作告一段落，该上Git了！</p>
+<p>&nbsp;</p>
+<p><strong>步骤四&nbsp;</strong>：打开此电脑，选择一个盘，比如 f 盘，右键空白处点击 git bash here。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305143603580-1181123251.png" alt="" /></p>
+<p>&nbsp;</p>
+<p><strong>步骤五</strong>：输入如下命令，用来在 f 盘创建 test 文件放你的github上的test repository，克隆test repository到 test 文件中。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305144226284-240519711.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>这个时候你的 f 盘，就会多一个 test 文件，打开它，</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305144422830-1748939517.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>会看到一个 README.md 的文件，这个文件是从哪来的呢？追溯到gihub上，你会发现你有两个分支（branches），而 README 文件是来自 master 分支。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305144809455-1559494911.png" alt="" width="529" height="260" /></p>
+<p>&nbsp;</p>
+<p>而我们需要编辑的是另一个分支&mdash;&mdash;gh-pages，因为这个分支才能够真正定义github pages的内容和样式，也就是可以呈现你网页的地方。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305145219659-1397982425.png" alt="" width="380" height="223" /></p>
+<p>&nbsp;</p>
+<p><strong>步骤六</strong>：输入以下命令，为了在本地新建一个gh-pages分支，而这个分支是远程分支origin/gh-pages的镜像，也就是我们可以在本地的gh-pages看到github上的gh-pages的内容。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305145815252-344194499.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>这个时候我们再打开 f 盘，发现变样了</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305145931096-1818738887.png" alt="" /></p>
+<p>刚才还是README呢，怎们现在成了3个文件了，这3个文件来自哪？</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305150144159-905298121.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>来自github 上的 gh-pages 分支下的文件。</p>
+<p>打开f 盘中的 index.html，你会发现就是咱们一开始选择主题的页面。那我们将这个页面替换成自己coding的网页不就好了？</p>
+<p>&nbsp;</p>
+<p><strong>步骤七</strong>：执行如下命令，删除原有的gh-pages文件，并提交（commit）本次修改。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305150641830-12563151.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>这个时候 f 盘没有文件。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305151026377-702293659.png" alt="" /></p>
+<p>&nbsp;</p>
+<p><strong>步骤八</strong>：将自己的网页文件复制粘贴至 f 盘的 test 文件中</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305151236221-872410232.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>输入如下命令，为了本地gh-pages中的网页文件同步到远程的gh-pages中。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305151516534-175124906.png" alt="" /></p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305151717159-2121860532.png" alt="" width="536" height="187" /></p>
+<p>&nbsp;</p>
+<p>输入最后一行 git push origin gh-pages，按回车，等一会，会有弹出框让你输入你的 github 账号和密码。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305152031768-1166232109.png" alt="" /></p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305152052471-1604781690.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>ok之后耐心等待。</p>
+<p>当出现像下图中的命令行之后，你已经完成了99%。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305152406221-11660909.png" alt="" /></p>
+<p>&nbsp;</p>
+<p><strong>最后一步</strong>：打开浏览器输入给你的网址加上 test.html，然后重重的按下回车。</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305152916580-99607842.png" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="http://images2015.cnblogs.com/blog/903320/201603/903320-20160305153305424-1042365035.png" alt="" />恭喜你，成功了！！！</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='ad_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='ad_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2020 小何
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+</body>
+</html>

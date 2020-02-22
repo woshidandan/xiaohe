@@ -1,0 +1,10 @@
+@charset"utf-8";
+.con .article_con{float:left;width:830px;padding-top:25px;}
+.con .article_con h2{font-size:22px;margin:20px 0;text-align:center;color:#c91b46;font-weight:bold;display:block;font-family:"宋体";}
+.con .article_con p.writer{line-height:35px;font-size:14px;color:#999;text-align:center;border-top:1px dashed #ABADB3;border-bottom:1px dashed #ABADB3;}
+.con .article_con p.writer a{color:#c91b46;}
+.con .article_con p.writer i{display:inline-block;width:50px;}
+.con .article_con p.article_all{font-size:14px;line-height:25px;text-indent:2em;padding:25px 5px;}
+.con .article_con p.article_two_tit{font-size:14px;line-height:25px;margin-bottom:50px;float:left;margin-right:350px;}
+.con .article_con p.article_two_tit a{color:#404040;}
+.con .article_con p.article_two_tit a:hover{color:#6fb5ee;}

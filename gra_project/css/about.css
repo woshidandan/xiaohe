@@ -1,0 +1,30 @@
+@charset"utf-8";
+.con .des{width:830px;height:800px;float:left;margin-top:20px;border-right:1px dashed  #ABADB3;}
+.con .des p.about_tit{line-height:35px;border-bottom:1px solid #c0c0c0;text-align:right;padding-right:25px;width:780px;}
+.con .des p.about_tit span{float:left;font-size:18px;color:#404040;margin-left:15px;}
+.con .des p.about_tit a{color:#b5b5b5;font-size:14px;}
+.con .des p.about_tit a:hover{color:#000;text-decoration:underline;}
+.con .des p.about_tit b{color:#b5b5b5;}
+.con .des section.about_con{float:right;margin-top:5px;padding:5px;width:820px;}
+.con .des section.about_con .tit_pic{float:left;width:300px;text-align:left;margin-right:30px;}
+.con .des section.about_con figure{font-size:14px;line-height:25px;letter-spacing:1px;}
+.con .des section.about_con figure span{font-size:22px;color:#c91b46;text-indent:20px;display:block;padding-bottom:20px;}
+.con .des section.about_con figure p{text-indent:2em;padding-right:15px;padding-top:15px;}
+.con .des section.about_con figure p strong{color:#c91b46;}
+.con .des section.about_con figure .read_me{padding:10px 25px 0;width:300px;margin:50px auto;border:1px solid #ABADB3;border-radius:5px;}
+/*tonZ start*/
+.con .banner_right{float:right;width:325px;padding-top:20px;}
+.con .banner_right .tonZ h3.zn_tonZ{font-weight:normal;display:block;font-size:16px;color:#404040;line-height:35px;position:relative;border-bottom:1px dashed #ABADB3;}
+.con .banner_right .tonZ h3.zn_tonZ img{display:inline-block;position:absolute;top:7px;left:72px;}
+.con .banner_right .tonZ p.tonZ_con{font-size:14px;color:#343434;line-height:25px;padding:5px;border:1px solid #c0c0c0;margin-top:7px;border-radius:3px;}
+.con .banner_right .tonZ p.tonZ_con a{color:red;text-decoration:underline;font-size:16px;letter-spacing:1px;}
+.con .banner_right .tonZ p.tonZ_con span{color:red;}
+/*tonZ end*/
+/*right start*/
+
+.con .article_right,.con .about{float:right;width:324px;padding-top:5px;}
+.con .article_right .weixin h3,.con .about h3{line-height:35px;font-size:16px;font-weight:normal;border-bottom:1px solid  #ABADB3;padding-top:10px;color:#404040;}
+.con .article_right .weixin img{margin:0 0 0 35px;}
+.con .about p{line-height:25px;font-size:12px;color:#404040;padding:20px 0 0 20px;}
+.con .about p a{text-decoration:underline;}
+/*right end*/
